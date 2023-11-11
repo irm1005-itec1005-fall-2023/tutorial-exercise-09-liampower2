@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <!-- Set the page title -->
+  <title>Tutorial Exercise 09</title>
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="utf-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Set the CSS Reset File -->
+  <link rel="stylesheet" href="./reset.css" />
+
+  <style>
+    html {
+      font-size: 1.0rem;
+    }
+
+    /* Styles for the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #edf2f4;
+      color: #242121;
+
+      /* Flex directives */
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      align-items: stretch;
+    }
+
+    /* The first item in the flex container will be the header */
+    header {
+      padding: 2rem 1rem;
+      background-color: #2b2d42;
+      color: #edf2f4;
+    }
+
+    header h2 {
+      text-align: center;
+      margin: 0;
+    }
+
+    /* The second item in the flex container will be the main content */
+    main {
+      /* Grow to fill the remaining space */
+      flex: 1;
+
+      /* Create a nested flex container */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Styles for the box inside main */
+    main .box-container {
+
+      padding: 50px;
+      width: 500px;
+      max-width: 80%;
+      margin: 1rem auto;
+
+      color: #edf2f4;
+      border-radius: 20px;
+      box-shadow: #8d99ae 0px 8px 40px;
+
+      /* Background colour and gradient are both set
+         incase the browser doesn't support gradients */
+      background-color: #ef233c;
+      background-image: linear-gradient(to right top, #2b2d42, #4e315f, #832766, #b70054, #d90429);
+    }
+
+    /* Styles for the headings */
+    main h1 {
+      font-size: 1.5rem;
+      margin: 0 0 1rem 0;
+      color: #edf2f4;
+    }
+
+    main ul {
+      font-size: 1.8rem;
+
+      /* Remove the bullets */
+      list-style: none;
+      margin: 30px 0 0 0;
+      padding: 0;
+    }
+
+    main ul li {
+      margin-bottom: 1rem;
+    }
+
+    main ul li a {
+      color: #edf2f4;
+      text-decoration: none;
+    }
+
+    main ul li a:hover {
+      color: #c0ccd0;
+      text-decoration: underline;
+    }
+
+    main ul li a:focus {
+      outline: 2px solid #102964;
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    footer {
+      padding: 2rem 1rem;
+      background-color: #2b2d42;
+      color: #edf2f4;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+
+        DO NOT MODIFY ANY HTML OR CSS IN THIS PAGE FOR THE TUTORIAL
+
+        THIS PAGE IS ONLY HERE TO PROVIDE LINKS
+        TO THE OTHER STEPS IN THE TUTORIAL
+
+      -->
+
+  <header>
+    <h2>Tutorial Exercise 09</h2>
+  </header>
+
+  <main>
+    <div class="box-container">
+
+      <h1>Javascript.</h1>
+
+      <ul>
+        <li><a href="./step-01.html">Step 01 - Basic variables</a></li>
+        <li><a href="./step-02.html">Step 02 - Working with arrays</a></li>
+        <li><a href="./step-03.html">Step 03 - if, else, and some for loops</a></li>
+        <li><a href="./step-04.html">Step 04 - Writing function logic</a></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <h2>Develop. Preview. Ship 🚀!</h2>
+  </footer>
+</body>
+
+</html>
